@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package auth;
 
-option go_package = "github.com/proto-exchange/exchange_grpc";
+option go_package = "github.com/apelsinkoo09/proto-exchange";
 
 // Определение сервиса
 service ExchangeService {
@@ -28,7 +28,7 @@ message ExchangeRateResponse {
 
 // Ответ с курсами обмена всех валют
 message ExchangeRatesResponse {
-    map<string, float> rates = 1; // ключ: валюта, значение: курс
+    map<string, float> rates = 1; // ключ: валюта, значение: курс!
 }
 
 // Пустое сообщение

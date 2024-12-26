@@ -73,7 +73,7 @@ func (x *CurrencyRequest) GetToCurrency() string {
 	return ""
 }
 
-// Ответ с курсом обмена для конкретной валюты
+// Ответ с курсом обмена для конкретной валюты!
 type ExchangeRateResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	FromCurrency  string                 `protobuf:"bytes,1,opt,name=from_currency,json=fromCurrency,proto3" json:"from_currency,omitempty"`
