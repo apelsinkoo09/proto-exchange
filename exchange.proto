@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package auth;
+package exchange;
 
 option go_package = "github.com/apelsinkoo09/proto-exchange";
 
