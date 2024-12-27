@@ -4,7 +4,7 @@
 // - protoc             v5.29.2
 // source: exchange.proto
 
-package exchange_grpc
+package proto_exchange
 
 import (
 	context "context"
@@ -19,8 +19,8 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	ExchangeService_GetExchangeRates_FullMethodName           = "/auth.ExchangeService/GetExchangeRates"
-	ExchangeService_GetExchangeRateForCurrency_FullMethodName = "/auth.ExchangeService/GetExchangeRateForCurrency"
+	ExchangeService_GetExchangeRates_FullMethodName           = "/exchange.ExchangeService/GetExchangeRates"
+	ExchangeService_GetExchangeRateForCurrency_FullMethodName = "/exchange.ExchangeService/GetExchangeRateForCurrency"
 )
 
 // ExchangeServiceClient is the client API for ExchangeService service.
@@ -150,7 +150,7 @@ func _ExchangeService_GetExchangeRateForCurrency_Handler(srv interface{}, ctx co
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var ExchangeService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "auth.ExchangeService",
+	ServiceName: "exchange.ExchangeService",
 	HandlerType: (*ExchangeServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
